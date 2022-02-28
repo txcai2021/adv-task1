@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace CartsApi.Models
 {
     public class Cart
     {     
+        [Key]
         public int CartId { get; set; }
       
         public List<CartDetail> Details { get; set; }
